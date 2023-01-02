@@ -29,7 +29,7 @@ def tiler(image):
         for j in range(0, image.shape[1], 600)
         if (image[i:i+600, j:j+600]).sum() <= 89964000
     ]
-    return tiles
+    return np.array(tiles)
 
 # WebApp
 st.subheader('Welcome to HWA')
